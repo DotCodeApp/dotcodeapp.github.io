@@ -41,4 +41,4 @@ These documents are provided for transparency and compliance purposes.
 
 **Developer:** Oleksandr Kiptilyi  
 **Last Updated:** October 2025  
-**Application:** [Secure Lock Notes on Google Play](https://play.google.com/store/apps/details?id=your.package.name)
+**Application:** [Secure Lock Notes on Google Play](https://play.google.com/store/apps/details?id=com.dotcodeapp.securelocknotes)
