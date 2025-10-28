@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for Secure Lock Notes">
+    <title>Terms of Service - Secure Lock Notes</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --bg-color: #ffffff;
+            --bg-secondary: #f9fafb;
+            --border-color: #e5e7eb;
+            --success-color: #059669;
+            --warning-color: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-secondary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .meta-info {
+            background: var(--bg-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin: -30px auto 30px;
+            max-width: 850px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .meta-item {
+            text-align: center;
+        }
+
+        .meta-label {
+            font-size: 0.85em;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .meta-value {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .content {
+            background: var(--bg-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        a:hover {
+            border-bottom-color: var(--primary-color);
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .important-note {
+            background: #fef3c7;
+            border-left: 4px solid var(--warning-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-box {
+            background: var(--bg-secondary);
+            border: 2px solid var(--primary-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .contact-email {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .meta-info {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: var(--success-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        strong {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .caps-text {
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p style="font-size: 44px;"><b>Secure Lock Notes</b></p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="meta-info">
+            <div class="meta-item">
+                <div class="meta-label">Effective Date</div>
+                <div class="meta-value">September 02, 2025</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Last Updated</div>
+                <div class="meta-value">September 02, 2025</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Version</div>
+                <div class="meta-value">1.0</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="highlight-box">
+                <p><strong>By downloading, installing, accessing, or using the Secure Lock Notes mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</strong></p>
+            </div>
+
+            <h2>1. ACCEPTANCE OF TERMS</h2>
+            <p>By downloading, installing, accessing, or using the Secure Lock Notes mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+
+            <h2>2. DESCRIPTION OF SERVICE</h2>
+            <p>Secure Lock Notes is a mobile application that provides encrypted note-taking, password management, and data storage services. The App is provided by Oleksandr Kiptilyi ("Developer", "we", "us", "our").</p>
+
+            <h2>3. LICENSE AND RESTRICTIONS</h2>
+            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App solely for personal, non-commercial purposes in accordance with these Terms.</p>
+
+            <h3>You agree NOT to:</h3>
+            <ul>
+                <li>Reverse engineer, decompile, disassemble, or attempt to derive source code</li>
+                <li>Copy, modify, distribute, sell, or lease any part of the App</li>
+                <li>Use the App for illegal, harmful, or unauthorized purposes</li>
+                <li>Attempt to gain unauthorized access to any systems or networks</li>
+                <li>Remove, alter, or obscure any proprietary notices</li>
+                <li>Use the App to store illegal content or violate any laws</li>
+            </ul>
+
+            <h2>4. USER ACCOUNTS AND DATA</h2>
+
+            <h3>4.1. Your Responsibilities</h3>
+            <p>You are solely responsible for the following:</p>
+            <ul>
+                <li><strong>Keeping your master password confidential.</strong> You are the only person who knows it. We do not store your password and cannot recover it if lost.</li>
+                <li>Ensuring the security of your physical device.</li>
+                <li>Any actions that occur within the application following successful authentication.</li>
+                <li>The content you create and store within the application.</li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>Critical Security Notice:</strong> We do not store your master password and cannot recover it if lost. If you forget your password, you will lose access to your encrypted data unless you have set up a recovery key or backup.</p>
+            </div>
+
+            <h3>4.2. Data Ownership</h3>
+            <p>You retain ownership of your data. However, you grant us a limited license to process your data solely to provide the App services.</p>
+
+            <h3>4.3. Data Loss Acknowledgment</h3>
+            <p>You acknowledge that:</p>
+            <ul>
+                <li>You are responsible for backing up your data</li>
+                <li>We are not liable for any data loss or corruption</li>
+                <li>The secure deletion feature permanently destroys data and cannot be reversed</li>
+            </ul>
+
+            <h2>5. PROHIBITED CONDUCT</h2>
+            <p>You agree not to use the App to:</p>
+            <ul>
+                <li>Store or transmit illegal, harmful, threatening, or offensive content</li>
+                <li>Violate any local, state, national, or international law</li>
+                <li>Infringe upon intellectual property rights</li>
+                <li>Transmit viruses, malware, or harmful code</li>
+                <li>Harass, abuse, or harm others</li>
+                <li>Collect personal information from other users</li>
+            </ul>
+
+            <h2>6. THIRD-PARTY SERVICES</h2>
+            <p>The App integrates with third-party services (Google Play Services, AdMob, Google Drive, Google Cloud Functions). Your use of these services is governed by their respective terms and privacy policies. We are not responsible for third-party services.</p>
+
+            <p>Links to third-party terms and policies:</p>
+            <ul>
+                <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services Terms</a></li>
+                <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob Terms</a></li>
+                <li><a href="https://firebase.google.com/terms/analytics" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+                <li><a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+            </ul>
+
+            <h2>7. DISCLAIMERS</h2>
+            <div class="warning-box">
+                <p class="caps-text">The App is provided "as is" and "as available" without warranties of any kind, express or implied.</p>
+                
+                <p class="caps-text" style="margin-top: 15px;">We disclaim all warranties including:</p>
+                <ul>
+                    <li>MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE</li>
+                    <li>UNINTERRUPTED OR ERROR-FREE OPERATION</li>
+                    <li>ACCURACY, RELIABILITY, OR COMPLETENESS OF CONTENT</li>
+                    <li>SECURITY OR PROTECTION FROM UNAUTHORIZED ACCESS</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>While we implement strong security measures, no system is completely secure. You use the App at your own risk.</strong></p>
+            </div>
+
+            <h2>8. LIMITATION OF LIABILITY</h2>
+            <div class="warning-box">
+                <p class="caps-text">To the maximum extent permitted by law:</p>
+                
+                <p class="caps-text" style="margin-top: 15px;">We shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:</p>
+                <ul>
+                    <li>LOSS OF DATA, PROFITS, OR USE</li>
+                    <li>BUSINESS INTERRUPTION</li>
+                    <li>PERSONAL INJURY OR PROPERTY DAMAGE</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR $100, WHICHEVER IS LESS.</strong></p>
+            </div>
+
+            <h2>9. INDEMNIFICATION</h2>
+            <p>You agree to indemnify, defend, and hold harmless the Developer from any claims, damages, losses, costs, or expenses arising from:</p>
+            <ul>
+                <li>Your use or misuse of the App</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any law or rights of others</li>
+                <li>Content you store or transmit through the App</li>
+            </ul>
+
+            <h2>10. TERMINATION</h2>
+
+            <h3>10.1. Termination by You</h3>
+            <p>You may terminate these Terms by uninstalling the App and ceasing all use.</p>
+
+            <h3>10.2. Termination by Us</h3>
+            <p>We may terminate or suspend your access immediately, without notice, for:</p>
+            <ul>
+                <li>Violation of these Terms</li>
+                <li>Illegal or fraudulent activity</li>
+                <li>Misuse of the App or services</li>
+                <li>Any other reason at our sole discretion</li>
+            </ul>
+
+            <h3>10.3. Effect of Termination</h3>
+            <p>Upon termination, your license ends, and you must cease using the App. Sections that should survive termination will remain in effect.</p>
+
+            <h2>11. IN-APP PURCHASES AND PREMIUM FEATURES</h2>
+
+            <h3>11.1. Premium Purchase Terms</h3>
+            <p>Acquiring Premium features requires a one-time payment. This purchase grants a lifetime license to use the Premium features and is not a periodic, auto-renewing subscription.</p>
+
+            <h3>11.2. Refund Policy</h3>
+            <p>Refunds are handled according to the app store's refund policy. We do not provide direct refunds.</p>
+
+            <h3>11.3. Changes to Premium Features</h3>
+            <p>We may modify, discontinue, or change premium features with reasonable notice.</p>
+
+            <h2>12. UPDATES AND MODIFICATIONS</h2>
+            <p>We may update the App to improve functionality, security, or comply with legal requirements.</p>
+            <p>We may modify these Terms at any time. Continued use after changes constitutes acceptance.</p>
+
+            <h2>13. PRIVACY</h2>
+            <p>Your privacy is governed by our <a href="privacy-policy.html">Privacy Policy</a>, which is incorporated by reference into these Terms.</p>
+
+            <h2>14. INTELLECTUAL PROPERTY</h2>
+            <p>The App and its original content, features, and functionality are owned by the Developer and protected by international copyright, trademark, and other intellectual property laws.</p>
+
+            <h2>15. GOVERNING LAW AND DISPUTE RESOLUTION</h2>
+            <p>These Terms are governed by the laws of Ukraine, without regard to conflict of law principles.</p>
+            <p>Any disputes shall be resolved through binding arbitration rather than court proceedings, except where prohibited by law.</p>
+            <p>You waive the right to participate in class actions or representative proceedings.</p>
+
+            <h2>16. MISCELLANEOUS</h2>
+
+            <h3>16.1. Entire Agreement</h3>
+            <p>These Terms constitute the entire agreement between you and the Developer.</p>
+
+            <h3>16.2. Severability</h3>
+            <p>If any provision is found invalid, the remaining provisions remain in effect.</p>
+
+            <h3>16.3. Waiver</h3>
+            <p>Failure to enforce any right or provision does not constitute a waiver.</p>
+
+            <h3>16.4. Force Majeure</h3>
+            <p>We are not liable for delays or failures due to circumstances beyond our reasonable control.</p>
+
+            <div class="contact-box">
+                <h3>17. CONTACT INFORMATION</h3>
+                <p>For questions about these Terms, contact us at:</p>
+                <p class="contact-email">Email: <a href="mailto:dotcodeapp@gmail.com">dotcodeapp@gmail.com</a></p>
+            </div>
+
+            <div class="highlight-box">
+                <p class="caps-text"><strong>By using the app, you acknowledge that you have read, understood, and agree to be bound by these terms.</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Secure Lock Notes. Developed by Oleksandr Kiptilyi.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
