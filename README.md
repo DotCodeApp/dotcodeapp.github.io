@@ -4,8 +4,8 @@ This repository contains the legal documents for **Secure Lock Notes** mobile ap
 
 ## 📄 Documents
 
-- **[Privacy Policy](https://yourusername.github.io/securelocknotes-legal/privacy-policy.html)** - How we collect, use, and protect your data
-- **[Terms of Service](https://yourusername.github.io/securelocknotes-legal/terms-of-service.html)** - Terms and conditions for using the app
+- **[Privacy Policy](https://dotcodeapp.github.io/securelocknotes-legal/privacy-policy.html)** - How we collect, use, and protect your data
+- **[Terms of Service](https://dotcodeapp.github.io/securelocknotes-legal/terms-of-service.html)** - Terms and conditions for using the app
 
 ## 📱 About Secure Lock Notes
 
