@@ -387,7 +387,19 @@
             <p>The Application employs strong encryption methods to protect user data stored locally on the device. All user-generated data, including notes, passwords, audio files, and photos, is always stored locally on your device and encrypted using industry-standard AES-256 encryption algorithms before being stored. The Application does not have any server-side databases, ensuring that your data remains under your control and is not accessible to the Service Provider or third parties unless explicitly shared by you.</p>
 
             <p>When using the optional Google Drive backup feature, your data is encrypted locally on your device before being transmitted and stored in your personal Google Drive account. This feature is entirely optional and requires your explicit consent. The Service Provider does not have access to, cannot decrypt, and cannot view your backed-up data.</p>
-
+            
+            <h3>Google OAuth Scopes</h3>
+            <p>To enable secure authentication and backup functionality, we request the following minimal Google OAuth scopes with your explicit consent:</p>
+            <ul>
+              <li><code>openid</code> — Required for secure OpenID Connect authentication.</li>
+			  <li><code>https://www.googleapis.com/auth/userinfo.email</code> — Used to identify your Google Account via email.</li>
+			  <li><code>https://www.googleapis.com/auth/userinfo.profile</code> — Used to access your display name and profile picture for optional personalization.</li>
+              <li><code>https://www.googleapis.com/auth/drive.file</code> — Used to create, access, and manage encrypted backup files stored in your personal Google Drive.</li>
+            </ul>
+            <p>All data is encrypted locally on your device before being uploaded. These permissions are used <strong>only</strong> for the stated purposes and are <strong>never</strong> shared with third parties. You can revoke access at any time via your
+			<a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a>.
+			</p>
+            
             <h3>Biometric Data</h3>
             <p>The Application may use biometric authentication (such as fingerprint or face recognition) for app access security. This biometric information is processed entirely on your device using your device's secure biometric systems and is never transmitted to or stored on external servers.</p>
 
